@@ -24,7 +24,7 @@ This folder consists of the following tree structure
     ├── output_3_lst
     ├── output_3_rms
     ├── README
-    ├── README.md
+    ├── Report.pdf
     ├── RMS_Scheduler.py
     └── Utility.py
 
