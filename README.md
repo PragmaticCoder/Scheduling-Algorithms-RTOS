@@ -1,4 +1,91 @@
-Scheduling_Algorithms_RTOS
-==========================
+NAME: SUDHIR KASANAVESI
+SBU# 108492541
 
-Simulator for various real-time task scheduling algorithms like RMS, EDF and LST.
+-----------------------------------------
+SIMULATION FOR RTOS SCHEDULING ALGORITHMS
+-----------------------------------------
+
+This folder consists of the following tree structure
+
+└── Scheduling_Algorithms_RTOS
+    ├── EDF_Scheduler.py
+    ├── input_1
+    ├── input_2
+    ├── input_3
+    ├── LST_Scheduler.py
+    ├── Main.py
+    ├── output_1_edf
+    ├── output_1_lst
+    ├── output_1_rms
+    ├── output_2_edf
+    ├── output_2_lst
+    ├── output_2_rms
+    ├── output_3_edf
+    ├── output_3_lst
+    ├── output_3_rms
+    ├── README
+    ├── README.md
+    ├── RMS_Scheduler.py
+    └── Utility.py
+
+---------------------------------------------------------------
+.py - these files are the python scripts
+Main.py - this is the main python script which needs to be run.
+---------------------------------------------------------------
+Files starting with input_* are input files. 
+They follow the format given in the assignment as below:
+<task_id>,<period>,<wcet> in a single line.
+Ex:
+input_1 - sample input file
+
+*************************************************************************
+NOTE : Please DONOT press ENTER KEY after the last task in the input file.
+*************************************************************************
+---------------------------------------------------------------
+Files starting with output_* are result files. 
+They display the results including the schedule. 
+The format of these files is self-explanatory.
+Ex:
+output_1_rms - rms result for tasks in input_1
+output_1_edf - edf result for tasks in input_1
+output_1_lst - lst result for tasks in input_1
+---------------------------------------------------------------
+NOTE: While executing the files may create temporary files 
+with extensions .pyc which are not harmful.
+This note is to specify that the directory in which these 
+are extracted needs to have write permission for the user.
+---------------------------------------------------------------
+
+--------------------
+EXECUTING THE SCRIPTS
+---------------------
+
+PRE-REQUISITE: Install python software.
+
+1) cd to the directory where the scripts are present in the terminal
+2) Execute the command below
+
+$ python Main.py input_1 rms > output_1_rms
+
+3) The above command reads the input file and runs the rms scheduler, 
+   the output is redirected to an output file output_1_rms
+4) Open the file output_1_rms to view results.
+5) For running other schedulers replace rms with edf or lst in the above 
+   command. These are case-sensitive.
+6) If the file is not in correct format (or) the command line arguments 
+   are not proper, it will display the usage.
+
+7) If you want to increase the simulation time then edit the following 
+   line in Utility.py with required time units.
+   
+Ex:
+
+SIMULATION_TIME = 20
+
+to
+
+SIMULATION_TIME = 40
+
+
+Thanks
+Sudhir

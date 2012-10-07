@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-SIMULATION_TIME = 20
+SIMULATION_TIME = 35
 
 def print_task_info(task_info):
 	print("Task\tPeriod\tWCET\tArrivalTime\tDeadline\tSlackTime\t#Pre-empts\t#deadline misses\t#completions\tcum_resp_time\tavg_resp_time")
